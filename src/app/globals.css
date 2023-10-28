@@ -43,7 +43,7 @@ a {
 
 .wrapper {
   max-width: 1536px;
-  background-color: aqua;
+  /* background-color: aqua; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 80px;
