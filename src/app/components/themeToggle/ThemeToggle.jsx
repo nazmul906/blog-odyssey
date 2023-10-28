@@ -3,15 +3,59 @@ import React, { useContext } from "react";
 import styles from "./themetoggle.module.css";
 import Image from "next/image";
 import { ThemeContext } from "@/app/context/ThemeContext";
-const ThemeToggle = () => {
-  const { theme, toggle } = useContext(ThemeContext);
+// const ThemeToggle = () => {
+//   const { theme, toggle } = useContext(ThemeContext);
 
-  console.log("theme", theme);
+//   console.log("theme", theme);
+//   return (
+//     <div
+//       className={styles.container}
+//       onClick={toggle}
+//       style={
+//         theme === "dark"
+//           ? { backgroundColor: "#white" }
+//           : { backgroundColor: "0f172a" }
+//       }
+//     >
+//       <Image src="/moon.png" width={24} height={24} alt="moon"></Image>
+//       <div
+//         className={styles.ball}
+//         style={
+//           theme === "dark"
+//             ? { left: 1, background: "#0f172a" }
+//             : { right: 1, background: "white" }
+//         }
+//       ></div>
+//       <Image src="/sun.png" width={24} height={24} alt="sun"></Image>
+//     </div>
+//   );
+// };
+
+// export default ThemeToggle;
+
+const ThemeToggle = () => {
+  const { toggle, theme } = useContext(ThemeContext);
+
   return (
-    <div className={styles.container} onClick={toggle}>
-      <Image src="/moon.png" width={24} height={24} alt="moon"></Image>
-      <div className={styles.ball}></div>
-      <Image src="/sun.png" width={24} height={24} alt="sun"></Image>
+    <div
+      className={styles.container}
+      onClick={toggle}
+      style={
+        theme === "dark"
+          ? { backgroundColor: "white" }
+          : { backgroundColor: "#0f172a" }
+      }
+    >
+      <Image src="/moon.png" alt="" width={14} height={14} />
+      <div
+        className={styles.ball}
+        style={
+          theme === "dark"
+            ? { left: 1, background: "#0f172a" }
+            : { right: 1, background: "white" }
+        }
+      ></div>
+      <Image src="/sun.png" alt="" width={14} height={14} />
     </div>
   );
 };
