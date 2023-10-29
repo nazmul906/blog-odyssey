@@ -1,3 +1,4 @@
+/* now we can use the root property as varibale any where we want with var() */
 :root {
   --bg: white;
   --textColor: black;

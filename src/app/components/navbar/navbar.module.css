@@ -14,6 +14,8 @@
 
 .logo {
   flex: 1;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .links {
@@ -21,4 +23,18 @@
   align-items: center;
   gap: 20px;
   flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .links {
+    justify-content: flex-end;
+  }
+  .link {
+    display: none;
+  }
 }

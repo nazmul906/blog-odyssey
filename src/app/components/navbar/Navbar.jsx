@@ -12,12 +12,18 @@ const Navbar = () => {
         <Image src="/facebook.png" width={24} height={24}></Image>
         <Image src="/tiktok.png" width={24} height={24}></Image>
       </div>
-      <div className={styles.logo}>Nazz</div>
+      <div className={styles.logo}>BloG</div>
       <div className={styles.links}>
         <ThemeToggle />
-        <Link href="/home">home</Link>
-        <Link href="/contact">contact</Link>
-        <Link href="/about">about</Link>
+        <Link href="/home" className={styles.link}>
+          home
+        </Link>
+        <Link href="/contact" className={styles.link}>
+          contact
+        </Link>
+        <Link href="/about" className={styles.link}>
+          about
+        </Link>
         <AuthLink />
       </div>
     </div>
