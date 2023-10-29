@@ -22,9 +22,9 @@ const AuthLink = () => {
           <Link href="/write" className={styles.link}>
             Write
           </Link>
-          <span className={styles.link} onClick={signOut}>
+          {/* <span className={styles.link} onClick={signOut}>
             Logout
-          </span>
+          </span> */}
         </>
       )}
       <div className={styles.burger} onClick={() => setOpen(!open)}>
