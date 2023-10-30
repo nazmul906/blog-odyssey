@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+/* now to set category and menu in screen
+and give them 5:2
+
+so go to their component css module and give them flex:5(category) and flex:2(menu)
+*/

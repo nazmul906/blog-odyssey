@@ -1,7 +1,5 @@
 import React from "react";
-import styles from "./card.module.css";
-
-import Image from "next/image";
+import styles from "./cardlist.module.css";
 import Card from "../card/Card";
 
 const CardList = async () => {

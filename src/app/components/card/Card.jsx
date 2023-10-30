@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image src="/p1.jpeg" alt="" fill></Image>
+        <Image src="/p1.jpeg" alt="" fill className={styles.image}></Image>
       </div>
       <div className={styles.textContainer}>
         <div className={styles.details}>
@@ -19,12 +19,14 @@ const Card = () => {
             dolorum!
           </h1>
         </Link>
-        <p>
+        <p className={styles.desc}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
           neque nemo ipsum omnis maxime similique dolore consequatur quia ad
           incidunt.
         </p>
-        <Link href="/">Read more</Link>
+        <Link href="/" className={styles.link}>
+          Read more
+        </Link>
       </div>
     </div>
   );
