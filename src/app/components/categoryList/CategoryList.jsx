@@ -30,8 +30,19 @@ const CategoryList = async () => {
             fashion
           </Link>
         </div>
-        <div className={`${styles.category} ${styles.food} `}>
+        <div className={`${styles.category} ${styles.culture} `}>
           <Link href="/blog?cat=style">
+            <Image
+              src="/culture.png"
+              height={23}
+              width={23}
+              className={styles.image}
+            ></Image>
+            culture
+          </Link>
+        </div>
+        <div className={`${styles.category} ${styles.food} `}>
+          <Link href={`/blog`}>
             <Image
               src="/food.png"
               height={23}

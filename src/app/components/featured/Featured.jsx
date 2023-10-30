@@ -5,11 +5,11 @@ const Featured = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>HI, I am rocky here!</b> discover my stories
+        <b>HI, I am robert here!</b> discover my stories
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="" fill className={styles.image}></Image>
+          <Image src="/p2.jpg" alt="" fill className={styles.image}></Image>
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>This is the title of post</h1>
