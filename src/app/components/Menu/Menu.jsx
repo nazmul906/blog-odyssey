@@ -3,6 +3,7 @@ import styles from "./menu.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import MenuPost from "../menuPost/MenuPost";
+import MenuCategories from "../menuCategories/MenuCategories";
 const Menu = () => {
   return (
     <div className={styles.container}>
@@ -11,6 +12,7 @@ const Menu = () => {
       {/* here menupost without image part will be rendered */}
       <MenuPost withImage={false}></MenuPost>
 
+      <MenuCategories></MenuCategories>
       {/* <h2 className={styles.subtitle}>Chosen by ME</h2>
       <h1 className={styles.title}>categories</h1>
       <div className={styles.categoryList}>
