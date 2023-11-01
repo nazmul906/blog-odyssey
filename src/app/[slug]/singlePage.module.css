@@ -1,0 +1,68 @@
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.textContainer {
+  flex: 1;
+}
+.title {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.userTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userImageContainer {
+  width: 40px;
+  height: 50px;
+  position: relative;
+}
+
+.userTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--softTextColor);
+}
+.username {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.imageContainer {
+  flex: 1;
+  height: 350px;
+  width: 300px;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+}
+
+.post {
+  flex: 5;
+  /* flex is 5 for post beacuse <Menu/> flex is 2 */
+  margin-top: 60px;
+}
+
+.description p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
