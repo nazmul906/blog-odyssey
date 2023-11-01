@@ -1,0 +1,12 @@
+.title {
+  background-color: brown;
+  color: antiquewhite;
+  text-align: center;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
