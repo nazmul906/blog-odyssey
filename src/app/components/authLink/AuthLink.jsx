@@ -2,15 +2,15 @@
 import Link from "next/link";
 import styles from "./authlink.module.css";
 import { useState } from "react";
-// import { signOut, useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 const AuthLink = () => {
   const [open, setOpen] = useState(false);
 
-  // const { status } = useSession();
+  const { status } = useSession();
   // todo: make it dynamic
-  const status = "unauthenticated";
-
+  // const status = "unauthenticated";
+  console.log("status in nav :", status);
   return (
     <>
       {status === "unauthenticated" ? (
@@ -22,9 +22,9 @@ const AuthLink = () => {
           <Link href="/write" className={styles.link}>
             Write
           </Link>
-          {/* <span className={styles.link} onClick={signOut}>
+          <span className={styles.link} onClick={signOut}>
             Logout
-          </span> */}
+          </span>
         </>
       )}
       <div className={styles.burger} onClick={() => setOpen(!open)}>
