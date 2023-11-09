@@ -3,14 +3,25 @@ import Link from "next/link";
 import styles from "./authlink.module.css";
 import { useState } from "react";
 import { signOut, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const AuthLink = () => {
   const [open, setOpen] = useState(false);
 
   const { status } = useSession();
+  const router = useRouter();
   // todo: make it dynamic
   // const status = "unauthenticated";
   console.log("status in nav :", status);
+
+  if (status === "loading") {
+    return <div className={styles.loading}>Loading...</div>;
+  }
+
+  if (status === "authenticated") {
+    router.push("/");
+  }
+
   return (
     <>
       {status === "unauthenticated" ? (
